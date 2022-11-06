@@ -117,14 +117,12 @@ my_font3 = ('Comic Sans MS', 12, 'bold')
 l1 = tk.Label(root, text="Cutie Calculator", font=my_font1, bg="orange")
 l1.pack()
 
-result = "Answer: "
-
 if number_ans == "Error!":
     l2 = tk.Label(root, text="Error!",font=my_font2)
     l2.pack()
 
 elif str(abs(number_ans)).isdigit():
-    l2 = tk.Label(root, text = (result + str(number_ans)),font=my_font2)
+    l2 = tk.Label(root, text = (str(no_space_output) + " = " + str(number_ans)),font=my_font2)
     l2.pack()
 
 root.mainloop()
